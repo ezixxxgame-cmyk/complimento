@@ -4,6 +4,10 @@ const categories = { all: 'Всё меню', breakfast: 'Завтраки', main
 const grid = document.querySelector('#menu-grid');
 const categorySelect = document.querySelector('#category-select');
 const categoryButtons = document.querySelectorAll('[data-category]');
+const menuToggle = document.querySelector('.menu-toggle');
+const desktopMenu = window.matchMedia('(min-width: 1100px)');
+let activeCategory = 'all';
+let menuExpanded = false;
 const numberFormat = new Intl.NumberFormat('ru-RU');
 
 const cards = menu.map(item => {
@@ -17,7 +21,7 @@ const cards = menu.map(item => {
   const sizes = item.image === 'wine' ? [480, 960] : [400, 800];
   photo.src = `assets/${item.image}-${sizes[0]}.webp`;
   photo.srcset = sizes.map(size => `assets/${item.image}-${size}.webp ${size}w`).join(', ');
-  photo.sizes = '(min-width: 1100px) 290px, (min-width: 700px) 44vw, 90vw';
+  photo.sizes = '(min-width: 1100px) 290px, (min-width: 700px) 44vw, 30vw';
   photo.width = 800;
   photo.height = 650;
   photo.loading = 'lazy';
@@ -47,24 +51,55 @@ const cards = menu.map(item => {
 });
 grid.replaceChildren(...cards);
 
-function filterMenu(category) {
-  let count = 0;
+function renderMenu() {
+  const matchingCards = cards.filter(card => activeCategory === 'all' || card.dataset.category === activeCategory);
+  const previewCount = desktopMenu.matches ? 8 : 6;
+  const visibleCards = menuExpanded ? matchingCards : matchingCards.slice(0, previewCount);
   for (const card of cards) {
-    card.hidden = category !== 'all' && card.dataset.category !== category;
-    if (!card.hidden) count++;
+    card.hidden = !visibleCards.includes(card);
   }
-  categorySelect.value = category;
-  categoryButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
-  document.querySelector('#menu-count').textContent = `Показано ${count} из ${menu.length}`;
-  document.querySelector('.menu-controls').dataset.active = category;
+  menuToggle.hidden = matchingCards.length <= previewCount;
+  menuToggle.setAttribute('aria-expanded', String(menuExpanded));
+  menuToggle.querySelector('span').textContent = menuExpanded ? 'Свернуть меню' : 'Развернуть меню';
+  document.querySelector('#menu-count').textContent = `Показано ${visibleCards.length} из ${matchingCards.length}`;
 }
 
+function filterMenu(category) {
+  activeCategory = category;
+  menuExpanded = false;
+  categorySelect.value = category;
+  categoryButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
+  renderMenu();
+}
+
+menuToggle.addEventListener('click', () => {
+  menuExpanded = !menuExpanded;
+  renderMenu();
+  if (!menuExpanded) document.querySelector('#menu').scrollIntoView({ block: 'start' });
+});
+desktopMenu.addEventListener('change', renderMenu);
 categorySelect.addEventListener('change', event => filterMenu(event.target.value));
 categoryButtons.forEach(button => button.addEventListener('click', () => filterMenu(button.dataset.category)));
 document.querySelectorAll('a[href="#menu"]').forEach(link => link.addEventListener('click', () => filterMenu('all')));
 filterMenu('all');
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const header = document.querySelector('.site-header');
+let lastScrollY = Math.max(0, window.scrollY);
+
+window.addEventListener('scroll', () => {
+  const scrollY = Math.max(0, window.scrollY);
+  if (scrollY <= 94) {
+    document.body.classList.remove('header-hidden');
+  } else if (Math.abs(scrollY - lastScrollY) < 8) {
+    return;
+  } else {
+    document.body.classList.toggle('header-hidden', scrollY > lastScrollY);
+  }
+  lastScrollY = scrollY;
+}, { passive: true });
+header.addEventListener('focusin', () => document.body.classList.remove('header-hidden'));
+
 const revealTargets = document.querySelectorAll('.dish-photo, .gallery figure, .hero-photo');
 const activeAnimations = new Set();
 
