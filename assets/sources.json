@@ -1,0 +1,137 @@
+{
+  "waffle-salmon": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/14774583/2a00000198e7ce5338ddca74d5be2b02ed38/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "waffle-julienne": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/16617364/2a00000198e7ce4e88b276a4ed23fd1b9264/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "syrniki-salmon": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/16130837/2a0000019957c334474c83a87d91c30e39dd/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "syrniki": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/903559/2a0000018974347f99f258be2581daa15928/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "waffle-bacon": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/1027639/2a0000018752021174ceb9ed458acfe7117d/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "carbonara": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/9331640/2a000001897434809c56327c86b2810be97b/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "waffle-classic": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/1132477/2a000001892c8a516cbf9e76f70b8aae9add/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "waffle-apple": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/9954022/2a000001892c89ee8eb523b8c51ac93a737a/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "strudel": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/4234174/2a0000018752021bd3408269e390ef202374/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "coffee-dessert": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/4234174/2a0000018752021bd3408269e390ef202374/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "latte": {
+    "type": "cafe-photo",
+    "url": "https://avatars.mds.yandex.net/get-altay/16399547/2a0000019957c31e24cdbf736a5f1b74a84e/XXXL",
+    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+  },
+  "wine": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild3832-3964-4461-a332-393366336261/photo_2021-01-11_17-.jpg",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "interior": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild3930-6131-4238-a264-396139363037/photo_2021-01-11_17-.jpg",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "details": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild6335-6136-4233-b864-343831616561/photo_2021-01-11_17-.jpg",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "lounge": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild6231-6263-4437-b066-393636333665/photo_2021-01-11_17-.jpg",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "pattern-green": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild3961-6262-4737-b461-313035313962/1.png",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "pattern-light": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild6538-6566-4831-a566-646132376537/2.png",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "pattern-pink": {
+    "type": "brand-material",
+    "url": "https://static.tildacdn.com/tild3430-3838-4539-a333-643431636565/3.png",
+    "source": "https://complimento.tilda.ws/#materials"
+  },
+  "bruschetta": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "Create one realistic editorial food photograph for a cafe demonstration menu. Two sourdough bruschetta toasts with thin folded lightly salted salmon, cream cheese, tiny cherry tomato and dill, on a cream ceramic plate. Vertical 4:5 composition, subject entirely visible and centered with breathing space in the middle 75%. Dark warm wooden cafe tabletop, deep forest green wall softly blurred in the background, late afternoon natural window light, warm cozy colors, tactile real food detail, tasteful unstyled authentic cafe photography. Camera at 45 degree angle. No text, no branding, no people, no watermarks, no collage, no other dishes. This is an illustrative photo, not documentation of an actual cafe. Save asset identifier: bruschetta."
+  },
+  "cheesecake": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "Create one realistic editorial food photograph for a cafe demonstration menu. One triangular slice of classic ivory cheesecake with a caramelized pear slice and a small golden passion fruit sauce spoonful, on a handmade pale cream plate. Vertical 4:5 composition, subject entirely visible and centered with breathing space in the middle 75%. Dark warm wooden cafe tabletop, deep forest green wall softly blurred in the background, late afternoon natural window light, warm cozy colors, tactile real food detail, tasteful unstyled authentic cafe photography. Camera at 45 degree angle. No text, no branding, no people, no watermarks, no collage, no other dishes. This is an illustrative photo, not documentation of an actual cafe. Save asset identifier: cheesecake."
+  },
+  "fondant": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "Create one realistic editorial food photograph for a cafe demonstration menu. One small dark chocolate lava fondant with flowing warm chocolate center and a scoop of vanilla ice cream, on a cream ceramic plate. Vertical 4:5 composition, subject entirely visible and centered with breathing space in the middle 75%. Dark warm wooden cafe tabletop, deep forest green wall softly blurred in the background, late afternoon natural window light, warm cozy colors, tactile real food detail, tasteful unstyled authentic cafe photography. Camera at 45 degree angle. No text, no branding, no people, no watermarks, no collage, no other dishes. This is an illustrative photo, not documentation of an actual cafe. Save asset identifier: fondant."
+  },
+  "espresso": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "Create one realistic editorial food photograph for a cafe demonstration menu. One small cream ceramic espresso cup with rich coffee crema, on a matching saucer, no milk. Vertical 4:5 composition, subject entirely visible and centered with breathing space in the middle 75%. Dark warm wooden cafe tabletop, deep forest green wall softly blurred in the background, late afternoon natural window light, warm cozy colors, tactile real food detail, tasteful unstyled authentic cafe photography. Camera at 45 degree angle. No text, no branding, no people, no watermarks, no collage, no other dishes. This is an illustrative photo, not documentation of an actual cafe. Save asset identifier: espresso."
+  },
+  "cappuccino": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "Create one realistic editorial food photograph for a cafe demonstration menu. One warm green ceramic cappuccino cup with a clearly recognizable delicate white latte art heart, on a saucer. Vertical 4:5 composition, subject entirely visible and centered with breathing space in the middle 75%. Dark warm wooden cafe tabletop, deep forest green wall softly blurred in the background, late afternoon natural window light, warm cozy colors, tactile real food detail, tasteful unstyled authentic cafe photography. Camera at 45 degree angle. No text, no branding, no people, no watermarks, no collage, no other dishes. This is an illustrative photo, not documentation of an actual cafe. Save asset identifier: cappuccino."
+  },
+  "tea": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "Create one realistic editorial food photograph for a cafe demonstration menu. One clear glass teapot filled with warm amber sea-buckthorn tea, visible orange sea-buckthorn berries, orange slice and cinnamon, a small empty clear glass beside it. Vertical 4:5 composition, subject entirely visible and centered with breathing space in the middle 75%. Dark warm wooden cafe tabletop, deep forest green wall softly blurred in the background, late afternoon natural window light, warm cozy colors, tactile real food detail, tasteful unstyled authentic cafe photography. Camera at 45 degree angle. No text, no branding, no people, no watermarks, no collage, no other dishes. This is an illustrative photo, not documentation of an actual cafe. Save asset identifier: tea."
+  },
+  "risotto": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "One realistic professional cafe menu photograph, vertical 4:5. Creamy mushroom risotto with clearly visible short arborio rice grains, sauteed mushrooms and shaved parmesan. Not pasta, no spaghetti or tagliatelle. Entire serving centered and visible in central 75%, handmade ivory ceramic plate on a dark warm wooden cafe tabletop, deep forest green softly blurred background, soft natural afternoon window light, warm cozy appetizing tones. No text, brand, people, labels, watermarks, other dishes or collage. Illustrative food photograph, not a photo of an actual restaurant's food."
+  },
+  "beef-salad": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "One realistic professional cafe menu photograph, vertical 4:5. A fresh salad of clearly identifiable thin slices of cooked roast beef, red sweet pepper, cucumber, cherry tomatoes, mixed lettuce and small pieces of cheese, with light mustard dressing. No liver. Entire serving centered and visible in central 75%, handmade ivory ceramic plate on a dark warm wooden cafe tabletop, deep forest green softly blurred background, soft natural afternoon window light, warm cozy appetizing tones. No text, brand, people, labels, watermarks, other dishes or collage. Illustrative food photograph, not a photo of an actual restaurant's food."
+  },
+  "brownie": {
+    "type": "ai-illustration",
+    "tool": "imagegen",
+    "prompt": "One realistic professional cafe menu photograph, vertical 4:5. One neat square warm dark chocolate brownie, a scoop of coffee ice cream and dark cherry sauce on an ivory ceramic plate. Entire serving centered and visible in central 75%, handmade ivory ceramic plate on a dark warm wooden cafe tabletop, deep forest green softly blurred background, soft natural afternoon window light, warm cozy appetizing tones. No text, brand, people, labels, watermarks, other dishes or collage. Illustrative food photograph, not a photo of an actual restaurant's food."
+  }
+}

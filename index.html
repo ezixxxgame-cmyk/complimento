@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#23412d">
+  <meta name="description" content="Complimento — кафе в Северске. Меню с фотографиями блюд и напитков, адрес и часы работы. Коммунистический проспект, 111. Телефон +7 (953) 929-21-28.">
+  <title>Complimento — кафе в Северске · Меню и контакты</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/serif-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path d="m6 3 4 4-2 3a14 14 0 0 0 6 6l3-2 4 4-2 3C10 22 2 14 3 5Z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3-4.6-4.5 6.4-.9Z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Complimento — в начало страницы">Complimento<span>кафе · Северск</span></a>
+      <nav class="navigation" aria-label="Основная навигация">
+        <a class="desktop-link" href="#about">О кафе</a>
+        <a href="#menu">Меню</a>
+        <a class="desktop-link" href="#atmosphere">Атмосфера</a>
+        <a class="desktop-link" href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+79539292128"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg> +7 (953) 929-21-28</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Вкусно быть<br><em>вместе.</em></h1>
+        <p class="hero-description">Complimento — кафе в Северске.<br>На чашку кофе, любимое блюдо<br class="wide-break"> и тёплый разговор.</p>
+        <a class="button button-primary" href="#menu">Посмотреть меню <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+        <div class="hero-location"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg><p>Коммунистический просп., 111<span>Каждый день с 11:00</span></p></div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/wine-960.webp" srcset="assets/wine-480.webp 480w, assets/wine-960.webp 960w" sizes="(min-width: 1000px) 46vw, (min-width: 700px) 47vw, 92vw" width="960" height="1280" alt="Бокал белого вина на фоне зелёного интерьера Complimento" fetchpriority="high">
+        <figcaption><span>кофе · вино · тепло</span><span>Complimento</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <h2 id="about-title">Для встреч,<br>которым рады.</h2>
+        <div class="about-copy"><p>Европейская кухня, кофе, десерты и вино. Complimento — место для обеда с коллегами и вечера с близкими.</p><p>Зелёные растения, дерево и мягкий свет — простые детали, из которых складывается уют.</p></div>
+        <a class="text-link light-link" href="#atmosphere">Заглянуть к нам <svg class="icon" aria-hidden="true"><use href="#arrow-up"/></svg></a>
+      </div>
+    </section>
+
+    <section class="menu-section container section-space" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading menu-heading">
+        <div><h2 id="menu-title">Что вам <br class="mobile-break"><em>по вкусу?</em></h2><p class="section-description">От первой чашки до любимого десерта.</p></div>
+        <div class="menu-notice"><p>Меню из Яндекс Карт. Цены и наличие уточняются</p><span>В источнике: «Давно не обновлялось»</span><a href="https://yandex.com/maps/org/complimento_/221076684101/menu/" target="_blank" rel="noopener noreferrer">Полное меню в Яндекс Картах</a></div>
+      </div>
+      <div class="menu-controls">
+        <div class="category-buttons" role="group" aria-label="Категория меню">
+          <button type="button" data-category="all" aria-pressed="true" aria-controls="menu-grid">Всё меню <span>20</span></button>
+          <button type="button" data-category="breakfast" aria-pressed="false" aria-controls="menu-grid">Завтраки</button>
+          <button type="button" data-category="main" aria-pressed="false" aria-controls="menu-grid">Основное</button>
+          <button type="button" data-category="desserts" aria-pressed="false" aria-controls="menu-grid">Десерты</button>
+          <button type="button" data-category="drinks" aria-pressed="false" aria-controls="menu-grid">Напитки</button>
+        </div>
+        <div class="category-mobile"><label class="sr-only" for="category-select">Категория меню</label><select id="category-select" aria-controls="menu-grid"><option value="all">Всё меню</option><option value="breakfast">Завтраки</option><option value="main">Основное</option><option value="desserts">Десерты</option><option value="drinks">Напитки</option></select></div>
+        <p id="menu-count" role="status" aria-live="polite" aria-atomic="true">20 позиций</p>
+      </div>
+      <div class="menu-grid" id="menu-grid"></div>
+      <noscript><p class="no-script">Для просмотра фотоменю включите JavaScript. Также можно <a href="https://yandex.com/maps/org/complimento_/221076684101/menu/" target="_blank" rel="noopener noreferrer">открыть меню на Яндекс Картах</a> или позвонить: <a href="tel:+79539292128">+7 (953) 929-21-28</a>.</p></noscript>
+      <div class="menu-footnote"><p>Фотографии — из материалов кафе и его карточки на Яндекс Картах. Изображения с отметкой «Иллюстрация» созданы с помощью ИИ и не являются фотографиями блюд Complimento.</p><a class="text-link" href="tel:+79539292128">Уточнить меню <svg class="icon" aria-hidden="true"><use href="#phone"/></svg></a></div>
+    </section>
+
+    <section class="atmosphere section-space" id="atmosphere" aria-labelledby="atmosphere-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="atmosphere-title">Уют <br class="mobile-break"><em>в деталях.</em></h2><p class="section-description">Немного зелени, мягкий свет.<br>И место для вашего разговора.</p></div>
+        <div class="gallery">
+          <figure class="gallery-main"><img src="assets/interior-480.webp" srcset="assets/interior-480.webp 480w, assets/interior-960.webp 960w" sizes="(min-width: 700px) 46vw, 90vw" width="960" height="1280" alt="Зелёные кресла, деревянные столы и подвесные растения в зале Complimento" loading="lazy" decoding="async"><figcaption>Наш зал</figcaption></figure>
+          <figure><img src="assets/details-480.webp" srcset="assets/details-480.webp 480w, assets/details-960.webp 960w" sizes="(min-width: 700px) 23vw, 44vw" width="960" height="1280" alt="Плетёный светильник, живые растения и деревянный потолок кафе" loading="lazy" decoding="async"><figcaption>Тёплый свет</figcaption></figure>
+          <figure><img src="assets/lounge-480.webp" srcset="assets/lounge-480.webp 480w, assets/lounge-960.webp 960w" sizes="(min-width: 700px) 23vw, 44vw" width="960" height="1280" alt="Мягкие кресла у столика рядом с зеркалом в Complimento" loading="lazy" decoding="async"><figcaption>Ваш уголок</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews container section-space" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-heading"><div><h2 id="reviews-title">Слова <em>гостей.</em></h2><p class="section-description">Короткие дословные фрагменты отзывов.</p></div><a class="text-link" href="https://yandex.com/maps/org/complimento_/221076684101/reviews/" target="_blank" rel="noopener noreferrer">Все отзывы на Яндекс Картах <svg class="icon" aria-hidden="true"><use href="#arrow-up"/></svg></a></div>
+      <div class="review-list">
+        <figure class="review">
+          <div class="review-stars" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+          <blockquote><p>«… Сырный латте наконец-то действительно СЫРНЫЙ🤗 …»</p></blockquote>
+          <figcaption><span class="review-author">Дарья Дергачёва</span><span class="review-date">19 апреля · Яндекс Карты</span></figcaption>
+          <a class="review-source" href="https://yandex.com/maps/org/complimento_/221076684101/reviews/" target="_blank" rel="noopener noreferrer" aria-label="Отзыв Дарьи Дергачёвой на Яндекс Картах">Читать в источнике <svg class="icon" aria-hidden="true"><use href="#arrow-up"/></svg></a>
+        </figure>
+        <figure class="review">
+          <div class="review-stars" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+          <blockquote><p>«… Персонал приятный, только бы им подрасти в уровне сервиса и знаний обслуживания.»</p></blockquote>
+          <figcaption><span class="review-author">Полина Антонова</span><span class="review-date">2 апреля · Яндекс Карты</span></figcaption>
+          <a class="review-source" href="https://yandex.com/maps/org/complimento_/221076684101/reviews/" target="_blank" rel="noopener noreferrer" aria-label="Отзыв Полины Антоновой на Яндекс Картах">Читать в источнике <svg class="icon" aria-hidden="true"><use href="#arrow-up"/></svg></a>
+        </figure>
+        <figure class="review">
+          <div class="review-stars" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg><svg aria-hidden="true"><use href="#star"/></svg></div>
+          <blockquote><p>«… Успокаивающая музыка, располагающая к общению. …»</p></blockquote>
+          <figcaption><span class="review-author">Наталья К.</span><span class="review-date"><time datetime="2025-11-28">28 ноября 2025</time> · Яндекс Карты</span></figcaption>
+          <a class="review-source" href="https://yandex.com/maps/org/complimento_/221076684101/reviews/" target="_blank" rel="noopener noreferrer" aria-label="Отзыв Натальи К. на Яндекс Картах">Читать в источнике <svg class="icon" aria-hidden="true"><use href="#arrow-up"/></svg></a>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contacts section-space" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-inner">
+        <div class="contacts-intro"><h2 id="contacts-title">Заглядывайте.<br><em>Вам здесь рады.</em></h2><a class="button button-light" href="tel:+79539292128"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg> +7 (953) 929-21-28</a></div>
+        <div class="contact-details">
+          <div><h3>Мы рядом</h3><address>Северск,<br>Коммунистический просп., 111</address><a class="text-link light-link" href="https://yandex.com/maps/11351/seversk/house/kommunisticheskiy_prospekt_111/bE0YfwdjSUMCQFtsfXl4cnlqZg==/" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах <svg class="icon" aria-hidden="true"><use href="#arrow-up"/></svg></a></div>
+          <div><h3>Время для встречи</h3><dl class="hours"><div><dt>Понедельник — четверг</dt><dd>11:00–23:00</dd></div><div><dt>Пятница — суббота</dt><dd>11:00–00:00</dd></div><div><dt>Воскресенье</dt><dd>11:00–23:00</dd></div></dl></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top">Complimento<span>кофе · вино · тепло</span></a><p>Кафе для тёплых встреч. Северск.</p><a class="text-link" href="#menu">К меню <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></div></footer>
+</body>
+</html>
