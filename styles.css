@@ -88,8 +88,7 @@ em { font-family: var(--serif); font-weight: 500; color: var(--burgundy); }
 .section-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; margin-bottom: 30px; }
 .section-description { margin-top: 16px; color: var(--muted); font-size: 1rem; line-height: 1.65; }
 .menu-notice { font-size: .76rem; }
-.menu-notice p { color: var(--burgundy); max-width: 34ch; }
-.menu-notice span { color: var(--muted); display: block; margin-top: 6px; }
+.menu-notice span { color: var(--muted); display: block; margin-top: -8px; }
 .menu-notice a { display: inline-flex; align-items: center; min-height: 44px; color: var(--green); }
 .menu-controls { display: flex; align-items: center; gap: 14px; padding-block: 12px; margin-bottom: 24px; background: var(--cream); position: sticky; z-index: 5; top: var(--header-height); transition: top 240ms ease; }
 .header-hidden .menu-controls { top: 0; }
@@ -114,10 +113,8 @@ body:has(.site-header :focus-visible) .menu-controls { top: var(--header-height)
 .menu-toggle .icon { transition: transform 200ms ease; }
 .menu-toggle[aria-expanded="true"] .icon { transform: rotate(180deg); }
 .menu-footnote { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
-.menu-footnote p { max-width: 77ch; color: var(--muted); font-size: .75rem; }
 .menu-footnote .text-link { color: var(--burgundy); flex-shrink: 0; }
 .no-script { padding: 24px 0; }
-.atmosphere .section-description { margin-top: 0; }
 .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
 .gallery-main { grid-column: 1 / -1; }
 .gallery img { width: 100%; height: auto; aspect-ratio: .78; object-fit: cover; border-radius: var(--photo-radius); }
@@ -204,10 +201,8 @@ address { font-size: 1.07rem; line-height: 1.6; font-style: normal; }
   .about-copy { font-size: 1rem; }
   .about .text-link { grid-column: 2; }
   .section-heading { flex-direction: row; justify-content: space-between; align-items: flex-end; gap: 40px; }
-  .section-heading > .section-description { max-width: 37ch; }
   .menu-heading { align-items: center; }
   .menu-notice { max-width: 29ch; }
-  .menu-notice p { font-size: .76rem; }
   .mobile-break { display: none; }
   .category-mobile { display: none; }
   .category-buttons { display: flex; gap: 7px; flex-wrap: wrap; }
@@ -255,7 +250,6 @@ address { font-size: 1.07rem; line-height: 1.6; font-style: normal; }
   .category-buttons button { padding-inline: 22px; }
   #menu-count { font-size: .76rem; }
   .menu-notice { max-width: none; }
-  .menu-notice p { max-width: none; }
   .gallery img, .gallery-main img { height: 460px; }
   .review-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
   .review blockquote { font-size: 1.7rem; }
