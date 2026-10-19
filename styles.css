@@ -128,8 +128,6 @@ body:has(.site-header :focus-visible) .menu-controls { top: var(--header-height)
 .review figcaption { margin-top: auto; }
 .review-author { display: block; font-size: .86rem; font-weight: 600; }
 .review-date { display: block; color: var(--muted); font-size: .75rem; margin-top: 5px; }
-.review-source { display: inline-flex; align-items: center; gap: 12px; width: fit-content; min-height: 44px; margin-top: 8px; font-size: .72rem; color: var(--muted); text-decoration: none; }
-.review-source .icon { width: 17px; height: 17px; }
 .contacts { color: var(--on-green); }
 .contacts-inner { display: grid; gap: 40px; }
 .contacts h2 { font-size: clamp(2.7rem, 8vw, 4.7rem); line-height: 1.04; }
@@ -174,7 +172,7 @@ address { font-size: 1.07rem; line-height: 1.6; font-style: normal; }
 @media (hover: hover) {
   .button-primary:hover, .menu-toggle:hover { background: var(--burgundy); }
   .button-light:hover { background: var(--green-muted); }
-  .navigation a:hover, .text-link:hover, .review-source:hover { text-decoration: underline; }
+  .navigation a:hover, .text-link:hover { text-decoration: underline; }
   .category-buttons button:hover { background: var(--soft); }
   .category-buttons button[aria-pressed="true"]:hover { background: var(--green); }
 }
