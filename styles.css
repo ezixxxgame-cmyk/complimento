@@ -48,6 +48,18 @@ em { font-family: var(--serif); font-weight: 500; color: var(--burgundy); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; gap: 12px; }
 .brand { display: inline-flex; flex-direction: column; flex-shrink: 0; font-family: var(--serif); font-size: 1.75rem; line-height: 1; letter-spacing: -.04em; font-weight: 600; text-decoration: none; padding-block: 7px; }
 .brand span { font: 500 .75rem/1.5 var(--sans); letter-spacing: .02em; margin-top: 5px; }
+.brand-header { flex-direction: row; align-items: center; gap: 6px; font-size: 1.5rem; }
+.brand-logo { width: 34px; height: 34px; border-radius: 50%; }
+@media (min-width: 380px) {
+  .brand-header { gap: 10px; font-size: 1.75rem; }
+  .brand-logo { width: 46px; height: 46px; }
+}
+.brand-header .brand-name { display: flex; flex-direction: column; font: inherit; letter-spacing: inherit; margin-top: 0; }
+.brand-name span { line-height: 1.35; }
+.brand-name span + span { margin-top: 0; }
+.slogan { white-space: nowrap; }
+.slogan i { display: inline-block; width: .38em; height: .38em; border-radius: 50%; background: var(--burgundy); vertical-align: .12em; }
+.hero h1 .slogan { display: block; margin-top: .45em; font: 500 clamp(1.05rem, 4.6vw, 1.6rem)/1.2 var(--sans); letter-spacing: .03em; color: var(--ink); }
 .navigation { display: flex; gap: 8px; align-items: center; }
 .navigation a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 4px; font-size: .78rem; font-weight: 500; text-decoration: none; transition: color 180ms ease; }
 .navigation a[href="#menu"] { color: var(--burgundy); }
@@ -221,6 +233,7 @@ address { font-size: 1.07rem; line-height: 1.6; font-style: normal; }
 @media (min-width: 1000px) {
   :root { --header-height: 94px; }
   .header-inner { min-height: 94px; }
+  .brand-logo { width: 56px; height: 56px; }
   .navigation { gap: 22px; }
   .header-phone { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: .78rem; text-decoration: none; }
   .header-phone .icon { width: 18px; height: 18px; }
