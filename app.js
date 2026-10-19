@@ -1,5 +1,16 @@
-import { menu } from './menu.js';
+import { menu as defaultMenu } from './menu.js';
 
+async function loadContent() {
+  try {
+    const response = await fetch('/api/content', { signal: AbortSignal.timeout(5000) });
+    return response.ok ? await response.json() : null;
+  } catch {
+    return null;
+  }
+}
+
+const content = await loadContent();
+const menu = content?.menu ?? defaultMenu;
 const categories = { all: 'Всё меню', breakfast: 'Завтраки', main: 'Основное', desserts: 'Десерты', drinks: 'Напитки' };
 const grid = document.querySelector('#menu-grid');
 const categorySelect = document.querySelector('#category-select');
@@ -17,18 +28,24 @@ const cards = menu.map(item => {
   card.id = item.id;
   const frame = document.createElement('div');
   frame.className = 'dish-photo';
-  const photo = document.createElement('img');
-  const sizes = item.image === 'wine' ? [480, 960] : [400, 800];
-  photo.src = `assets/${item.image}-${sizes[0]}.webp`;
-  photo.srcset = sizes.map(size => `assets/${item.image}-${size}.webp ${size}w`).join(', ');
-  photo.sizes = '(min-width: 1100px) 290px, (min-width: 700px) 44vw, 30vw';
-  photo.width = 800;
-  photo.height = 650;
-  photo.loading = 'lazy';
-  photo.decoding = 'async';
-  photo.alt = item.imageType === 'illustration' ? `${item.name} — иллюстративное изображение` : `${item.name} — фотография из материалов Complimento`;
-  if (item.position) photo.style.objectPosition = item.position;
-  frame.append(photo);
+  if (item.image) {
+    const photo = document.createElement('img');
+    if (/^https?:/.test(item.image)) {
+      photo.src = item.image;
+    } else {
+      const sizes = item.image === 'wine' ? [480, 960] : [400, 800];
+      photo.src = `assets/${item.image}-${sizes[0]}.webp`;
+      photo.srcset = sizes.map(size => `assets/${item.image}-${size}.webp ${size}w`).join(', ');
+      photo.sizes = '(min-width: 1100px) 290px, (min-width: 700px) 44vw, 30vw';
+    }
+    photo.width = 800;
+    photo.height = 650;
+    photo.loading = 'lazy';
+    photo.decoding = 'async';
+    photo.alt = item.imageType === 'illustration' ? `${item.name} — иллюстративное изображение` : `${item.name} — фотография из материалов Complimento`;
+    if (item.position) photo.style.objectPosition = item.position;
+    frame.append(photo);
+  }
   if (item.imageType === 'illustration') {
     const badge = document.createElement('span');
     badge.className = 'image-label';
@@ -50,6 +67,31 @@ const cards = menu.map(item => {
   return card;
 });
 grid.replaceChildren(...cards);
+document.querySelector('[data-category="all"] span').textContent = menu.length;
+
+function setPhoto(image, photo) {
+  if (!photo) return;
+  image.removeAttribute('srcset');
+  image.src = photo.url;
+  if (photo.alt) image.alt = photo.alt;
+}
+setPhoto(document.querySelector('.hero-photo img'), content?.hero);
+document.querySelectorAll('.gallery img').forEach((image, index) => setPhoto(image, content?.gallery?.[index]));
+
+if (content?.hours) {
+  document.querySelector('.hours').replaceChildren(...content.hours.map(({ days, time }) => {
+    const row = document.createElement('div');
+    const term = document.createElement('dt');
+    const value = document.createElement('dd');
+    term.textContent = days;
+    value.textContent = time;
+    row.append(term, value);
+    return row;
+  }));
+  const openingTimes = new Set(content.hours.map(({ time }) => time.match(/^\d{1,2}:\d{2}/)?.[0]));
+  const [opening] = openingTimes;
+  document.querySelector('.hero-location span').textContent = openingTimes.size === 1 && opening ? `Каждый день с ${opening}` : '';
+}
 
 function renderMenu() {
   const matchingCards = cards.filter(card => activeCategory === 'all' || card.dataset.category === activeCategory);
