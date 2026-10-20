@@ -5,19 +5,16 @@
     "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
   },
   "waffle-julienne": {
-    "type": "cafe-photo",
-    "url": "https://avatars.mds.yandex.net/get-altay/16617364/2a00000198e7ce4e88b276a4ed23fd1b9264/XXXL",
-    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+    "type": "owner-photo",
+    "source": "Вафля с жюльеном.jpg, supplied by the owner on 2026-10-20, cropped square"
   },
   "syrniki-salmon": {
-    "type": "cafe-photo",
-    "url": "https://avatars.mds.yandex.net/get-altay/16130837/2a0000019957c334474c83a87d91c30e39dd/XXXL",
-    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+    "type": "owner-photo",
+    "source": "сырники с семгой.png, supplied by the owner on 2026-10-20, cropped square"
   },
   "syrniki": {
-    "type": "cafe-photo",
-    "url": "https://avatars.mds.yandex.net/get-altay/903559/2a0000018974347f99f258be2581daa15928/XXXL",
-    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+    "type": "owner-photo",
+    "source": "сырники с карамельной сметаной.png, supplied by the owner on 2026-10-20, cropped square"
   },
   "waffle-bacon": {
     "type": "cafe-photo",
@@ -25,9 +22,8 @@
     "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
   },
   "carbonara": {
-    "type": "cafe-photo",
-    "url": "https://avatars.mds.yandex.net/get-altay/9331640/2a000001897434809c56327c86b2810be97b/XXXL",
-    "source": "https://yandex.com/maps/org/complimento_/221076684101/gallery/"
+    "type": "owner-photo",
+    "source": "Паста Карбонара.jpg, supplied by the owner on 2026-10-20, cropped square"
   },
   "waffle-classic": {
     "type": "cafe-photo",
@@ -133,5 +129,81 @@
     "type": "ai-illustration",
     "tool": "imagegen",
     "prompt": "One realistic professional cafe menu photograph, vertical 4:5. One neat square warm dark chocolate brownie, a scoop of coffee ice cream and dark cherry sauce on an ivory ceramic plate. Entire serving centered and visible in central 75%, handmade ivory ceramic plate on a dark warm wooden cafe tabletop, deep forest green softly blurred background, soft natural afternoon window light, warm cozy appetizing tones. No text, brand, people, labels, watermarks, other dishes or collage. Illustrative food photograph, not a photo of an actual restaurant's food."
+  },
+  "roll-california-shrimp": {
+    "type": "owner-photo",
+    "source": "Калифорния с креветкой.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "roll-kappa-maki": {
+    "type": "owner-photo",
+    "source": "капа маки.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "roll-sake-maki": {
+    "type": "owner-photo",
+    "source": "сяки маки.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "milk-girl": {
+    "type": "owner-photo",
+    "source": "торт Молочная девочка с малиновым конфитюром.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "julienne": {
+    "type": "owner-photo",
+    "source": "Жюльен.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "salad-baked-vegetables": {
+    "type": "owner-photo",
+    "source": "теплый салат с печеными овощами.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "salad-tiger-shrimp": {
+    "type": "owner-photo",
+    "source": "теплый салат с тигровыми креветками.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "salad-meat-potato": {
+    "type": "owner-photo",
+    "source": "мясной салат с печеным картофелем.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "salad-sweet-potato": {
+    "type": "owner-photo",
+    "source": "салат с бататом и шпинатом.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "salad-salmon-potato": {
+    "type": "owner-photo",
+    "source": "салат с бейби картофелем и семгой.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "caesar-salmon": {
+    "type": "owner-photo",
+    "source": "цезарь с семгой.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "caesar-chicken": {
+    "type": "owner-photo",
+    "source": "цезарь с курицей.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "risotto-seafood": {
+    "type": "owner-photo",
+    "source": "ризотто с морепродуктами.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "risotto-mushrooms": {
+    "type": "owner-photo",
+    "source": "Ризотто с грибами.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "risoni-shrimp": {
+    "type": "owner-photo",
+    "source": "ризони с креветкой.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "spaghetti-chicken": {
+    "type": "owner-photo",
+    "source": "спагетти с курицей и кедровыми орехами.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "pasta-trout": {
+    "type": "owner-photo",
+    "source": "паста с форелью и брокколи.png, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "pasta-chicken": {
+    "type": "owner-photo",
+    "source": "Паста с курицей и шампиньонами.jpg, supplied by the owner on 2026-10-20, cropped square"
+  },
+  "tom-yum-shrimp": {
+    "type": "owner-photo",
+    "source": "Том Ям с креветкой.jpg, supplied by the owner on 2026-10-20, cropped square"
   }
 }
