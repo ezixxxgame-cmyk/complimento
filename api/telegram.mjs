@@ -99,7 +99,7 @@ async function onButton(chat, data) {
     }
     case 'add':
       await setState(chat, { action: 'add', category: id });
-      return send(chat, 'Отправьте одним сообщением три строки: название, описание, цену. Например:\n\nКапучино\nЭспрессо и молочная пена. 150 мл.\n200', cancel);
+      return send(chat, 'Отправьте название блюда.', cancel);
     case 'photo':
       await setState(chat, { action: 'photo', target: id });
       return send(chat, `Отправьте фото (как фото, не файлом).${isItemId(id) ? '' : ' В подписи можно коротко описать, что на снимке, — это услышат незрячие посетители.'}`, cancel);
@@ -143,16 +143,25 @@ async function onMessage(chat, message) {
     if (!value) return send(chat, `Не получилось прочитать. Отправьте ${fields[state.field]}.`, cancel);
     await updateItem(itemId, { [state.field]: value });
   } else if (state.action === 'add') {
-    const [name, description, price = ''] = message.text.split('\n').map(line => line.trim()).filter(Boolean);
-    if (!description || !parsePrice(price)) return send(chat, 'Нужны три строки: название, описание, цена. Попробуйте ещё раз.', cancel);
+    const text = message.text.trim();
+    if (!state.name) {
+      await setState(chat, { ...state, name: text });
+      return send(chat, 'Теперь отправьте описание.', cancel);
+    }
+    if (state.description === undefined) {
+      await setState(chat, { ...state, description: text });
+      return send(chat, 'Теперь отправьте цену числом, например 350.', cancel);
+    }
+    const price = parsePrice(text);
+    if (!price) return send(chat, 'Не получилось прочитать цену. Отправьте число, например 350.', cancel);
     const [last] = await db('menu_items?select=sort&order=sort.desc&limit=1');
     const [item] = await db('menu_items', {
       method: 'POST',
       headers: { Prefer: 'return=representation' },
-      body: JSON.stringify({ category: state.category, name, description, price: parsePrice(price), sort: (last?.sort ?? 0) + 1 })
+      body: JSON.stringify({ category: state.category, name: state.name, description: state.description, price, sort: (last?.sort ?? 0) + 1 })
     });
     await setState(chat, { action: 'photo', target: String(item.id) });
-    return send(chat, `«${name}» добавлено. Теперь отправьте фото блюда.`, [[['Без фото', `item:${item.id}`]]]);
+    return send(chat, `«${state.name}» добавлено. Теперь отправьте фото блюда.`, [[['Без фото', `item:${item.id}`]]]);
   } else if (state.action === 'hours') {
     const hours = message.text.split('\n').filter(line => line.trim()).map(line => line.split('|').map(part => part.trim()));
     if (!hours.length || hours.some(row => row.length !== 2 || !row[0] || !row[1])) {
