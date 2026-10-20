@@ -11,7 +11,7 @@ async function loadContent() {
 
 const content = await loadContent();
 const menu = content?.menu ?? defaultMenu;
-const categories = { all: 'Всё меню', breakfast: 'Завтраки', main: 'Основное', desserts: 'Десерты', drinks: 'Напитки' };
+const categories = { all: 'Всё меню', breakfast: 'Завтраки', rolls: 'Роллы', desserts: 'Десерты', waffles: 'Вафли', snacks: 'Закуски и салаты', hot: 'Горячее', drinks: 'Напитки' };
 const grid = document.querySelector('#menu-grid');
 const categorySelect = document.querySelector('#category-select');
 const categoryButtons = document.querySelectorAll('[data-category]');

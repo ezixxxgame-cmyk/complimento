@@ -1,6 +1,6 @@
 import { db, supabaseHeaders } from './content.mjs';
 
-const categories = { breakfast: 'Завтраки', main: 'Основное', desserts: 'Десерты', drinks: 'Напитки' };
+const categories = { breakfast: 'Завтраки', rolls: 'Роллы', desserts: 'Десерты', waffles: 'Вафли', snacks: 'Закуски и салаты', hot: 'Горячее', drinks: 'Напитки' };
 const fields = { name: 'новое название', description: 'новое описание', price: 'новую цену числом, например 350' };
 const galleryNames = ['Большое фото «Наш зал»', 'Фото «Тёплый свет»', 'Фото «Ваш уголок»'];
 const cancel = [[['Отмена', 'home']]];

@@ -67,14 +67,17 @@
       </div>
       <div class="menu-controls">
         <div class="category-buttons" role="group" aria-label="Категория меню">
-          <button type="button" data-category="all" aria-pressed="true" aria-controls="menu-grid">Всё меню <span>20</span></button>
+          <button type="button" data-category="all" aria-pressed="true" aria-controls="menu-grid">Всё меню <span>5</span></button>
           <button type="button" data-category="breakfast" aria-pressed="false" aria-controls="menu-grid">Завтраки</button>
-          <button type="button" data-category="main" aria-pressed="false" aria-controls="menu-grid">Основное</button>
+          <button type="button" data-category="rolls" aria-pressed="false" aria-controls="menu-grid">Роллы</button>
           <button type="button" data-category="desserts" aria-pressed="false" aria-controls="menu-grid">Десерты</button>
+          <button type="button" data-category="waffles" aria-pressed="false" aria-controls="menu-grid">Вафли</button>
+          <button type="button" data-category="snacks" aria-pressed="false" aria-controls="menu-grid">Закуски и салаты</button>
+          <button type="button" data-category="hot" aria-pressed="false" aria-controls="menu-grid">Горячее</button>
           <button type="button" data-category="drinks" aria-pressed="false" aria-controls="menu-grid">Напитки</button>
         </div>
-        <div class="category-mobile"><label class="sr-only" for="category-select">Категория меню</label><select id="category-select" aria-controls="menu-grid"><option value="all">Всё меню</option><option value="breakfast">Завтраки</option><option value="main">Основное</option><option value="desserts">Десерты</option><option value="drinks">Напитки</option></select></div>
-        <p id="menu-count" role="status" aria-live="polite" aria-atomic="true">20 позиций</p>
+        <div class="category-mobile"><label class="sr-only" for="category-select">Категория меню</label><select id="category-select" aria-controls="menu-grid"><option value="all">Всё меню</option><option value="breakfast">Завтраки</option><option value="rolls">Роллы</option><option value="desserts">Десерты</option><option value="waffles">Вафли</option><option value="snacks">Закуски и салаты</option><option value="hot">Горячее</option><option value="drinks">Напитки</option></select></div>
+        <p id="menu-count" role="status" aria-live="polite" aria-atomic="true">5 позиций</p>
       </div>
       <div class="menu-grid" id="menu-grid"></div>
       <div class="menu-expand"><button class="button menu-toggle" type="button" aria-expanded="false" aria-controls="menu-grid" hidden><span>Развернуть меню</span><svg class="icon" aria-hidden="true"><use href="#chevron"/></svg></button></div>
